@@ -151,7 +151,7 @@ public class Move : MonoBehaviour {
 		// Got a coin
 		if (col.gameObject.name == "Coin") {
 			Destroy (col.gameObject);
-			score++;
+			score += 3;
 			score_object.text = "Score: " + score;
 		} else if (col.gameObject.name == "Bird") {
 			bird_hits++;
