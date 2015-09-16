@@ -20,13 +20,17 @@ public class Move : MonoBehaviour {
 	public int bird_hits = 0;
 	GUIText score_object;
 	GUIText final_score_object;
+	GameObject play_again;
 	GameObject gameover;
 
 	void Start() {
 		gameover = GameObject.Find ("GameOver");
-
+		play_again = GameObject.Find ("PlayAgain");
 		if (gameover != null) {
 			gameover.SetActive (false);
+		}
+		if (play_again != null) {
+			play_again.SetActive (false);
 		}
 
 		animator = GetComponent<Animator>();
@@ -195,6 +199,9 @@ public class Move : MonoBehaviour {
 		clearPuffs ();
 		if (gameover != null) {
 			gameover.SetActive (true);
+		}
+		if (play_again != null) {
+			play_again.SetActive (true);
 		}
 		final_score_object.text = "SCORE: " + score;
 	}

@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\bird_script.cs" />
      <Compile Include="Assets\Scripts\coin_script.cs" />
      <Compile Include="Assets\Scripts\generate_coins.cs" />
+     <Compile Include="Assets\Scripts\play_button_script.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
